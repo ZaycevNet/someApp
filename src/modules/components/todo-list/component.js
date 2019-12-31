@@ -1,5 +1,7 @@
+// Без этого компонента ничего не будет работать
 import React from "react";
 
+// В этом компоненте находится представление самого дела в общем списке дел
 import ItemTODO from "../todo-item/componentConnect";
 
 const Component = function(data) {
@@ -35,4 +37,5 @@ const Component = function(data) {
   }
 };
 
+// Экспортируем наружу наш компонент
 export default Component;

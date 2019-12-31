@@ -1,9 +1,14 @@
+// Здесь мы опишим методы которые и будут напрямую взаимодействовать со стором
+
+// Берем доступные методы
 import * as actionTypes from "./actionTypes";
 
+// Создаем начальное состояние
 const initialState = {
   todos: []
 };
 
+// Редьюсер. Он то и взаимодействет с состоянием
 const Reducer = function(state = initialState, action) {
   let temp;
 
@@ -58,4 +63,5 @@ const Reducer = function(state = initialState, action) {
   }
 };
 
+// И его мы выпускаем наружу чтоб можно было его использовать в других компонентах
 export default Reducer;

@@ -1,5 +1,7 @@
+// Без этого компонента ничего не будет работать
 import React from "react";
 
+// Создаем наш компонент
 const Component = function(data) {
   const stylesheets = {
     container: {
@@ -29,4 +31,5 @@ const Component = function(data) {
   );
 };
 
+// Экспортируем наружу наш компонент
 export default Component;

@@ -1,5 +1,7 @@
+// Без этого компонента ничего не будет работать
 import React from "react";
 
+// Создаем сам компонент
 const Component = function() {
   const styles = {
     backgroundImage:
@@ -15,4 +17,5 @@ const Component = function() {
   return <div style={styles}></div>;
 };
 
+// Экспортируем наружу наш компонент
 export default Component;

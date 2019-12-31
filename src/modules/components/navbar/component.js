@@ -1,6 +1,8 @@
+// Без этого компонента ничего не будет работать
 import React from "react";
 
-const Component = function(data) {
+// Создаем наш компонент
+const Component = function() {
   return (
     <nav>
       <div className="nav-wrapper container">
@@ -10,4 +12,5 @@ const Component = function(data) {
   );
 };
 
+// Экспортируем наружу наш компонент
 export default Component;

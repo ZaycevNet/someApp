@@ -1,5 +1,7 @@
+// Без этого компонента ничего не будет работать
 import React from "react";
 
+// Создаем наш компонент
 const Component = function({ dispatch, todo }) {
   const checkbox = React.useRef();
 
@@ -43,4 +45,5 @@ const Component = function({ dispatch, todo }) {
   );
 };
 
+// Экспортируем наружу наш компонент
 export default Component;

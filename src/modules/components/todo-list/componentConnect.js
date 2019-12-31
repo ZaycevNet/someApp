@@ -1,6 +1,9 @@
-import Component from "./component";
+// Здесь нам не надо подключать сам реакт, так как в этом компоненте мы подключаем уже созданный нами компонент к глобальному стору
 
+// Сей компонент необходим для подключения нашего компонента к глобальному стору
 import { connect } from "react-redux";
+// Подключаем ранее написанный нами компонент
+import Component from "./component";
 
 const map_state_to_props = store => ({
   state: {
@@ -8,4 +11,5 @@ const map_state_to_props = store => ({
   }
 });
 
+// И экспортируем уже подключенный к глобальному стору наш компонент, теперь мы можем в нем юзать глобальные функции и переменные
 export default connect(map_state_to_props)(Component);
